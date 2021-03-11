@@ -1,0 +1,239 @@
+.container{
+  position:relative;
+  background-image: none;
+  max-width: 1536px;
+  margin-top:0;
+  padding: 0;
+  margin: auto;
+  height: 1280px;
+  font-family: 'Recursive', sans-serif;
+  color: white;
+}
+
+body{
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url("../images/duplicazione2.jpg");
+  background-position: center;
+  background-repeat: repeat;
+}
+
+
+
+/*----------------------ASTRONAUTA----------------------*/
+  .astronauta{
+    position:absolute;
+    width: 300px;
+    left:580px;
+    top:120px;
+  }
+
+  .testaImage{
+    position:absolute;
+    width: 152px;
+    left:715px;
+    top:120px;
+  }
+
+  .gambaImage{
+    position: absolute;
+    width: 120px;
+    top:420px;
+    left:715px;
+  }
+
+  .gambaImage2{
+    position: absolute;
+    width: 120px;
+    top:410px;
+    left:660px;
+    transform: rotate(30deg);
+  }
+
+/*----------------------END ASTRONAUTA----------------------*/
+
+
+/*----------------------NUVOLE----------------------*/
+
+.ImageNuvole{
+  position:absolute;
+  top: 812px;
+  left:-0px;
+}
+
+.ImageNuvole2{
+  position:absolute;
+  top: 812px;
+  left:-1000px;
+}
+
+.ImageNuvole3{
+  position:absolute;
+  top: 812px;
+  left:+1000px;
+}
+
+.ImageNuvole4{
+  position:absolute;
+  top: 980px;
+  left:0px;
+}
+
+.ImageNuvole5{
+  position:absolute;
+  top: 1148px;
+  left:-1000px;
+}
+
+.ImageNuvole6{
+  position:absolute;
+  top: 1148px;
+  left:+1000px;
+}
+
+.ImageNuvole7{
+  position:absolute;
+  top: 1148px;
+  left:0px;
+}
+
+.ImageNuvole8{
+  position:absolute;
+  top: 980px;
+  left:-1000px;
+}
+
+.ImageNuvole9{
+  position:absolute;
+  top: 980px;
+  left:+1000px;
+}
+
+/*----------------------END NUVOLE----------------------*/
+
+.opsImage{
+  position:absolute;
+  top:200px;
+  left:20px;
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+  color: green;
+  text-decoration: none;
+  border-bottom: 1px solid green;
+}
+
+a:visited{
+  color: green;
+  text-decoration: none;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.tornaAllaHomeImage{
+  position:absolute;
+  top:200px;
+  left:970px;
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.box {
+  background-image: url("../images/tornaAllaHome.png");
+  position: absolute;
+  width: 448px;
+  height: 70px;
+  top: 318px;
+  left: 965px;
+
+  transition: 0.5s;
+  cursor: pointer;
+  border: 2px solid #4fc0a5;
+  -webkit-transition:0.5s;
+}
+
+.box:hover {
+  border: 2px solid rgba(0,160,80,0);
+  color: #FFF;
+}
+
+.box::before, .box::after {
+  width: 448px;
+  height: 72px;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:-3px;
+  left:-1px;
+  box-sizing: initial;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.foo::before {
+  border-bottom: 3px solid #e15444;
+  border-left: 3px solid #e15444;
+  -webkit-transform-origin: 0 100%;
+}
+
+.foo::after {
+  border-top: 3px solid #e15444;
+  border-right: 3px solid #e15444;
+  -webkit-transform-origin: 100% 0%;
+}
+
+.box:hover::after, .box:hover::before {
+  -webkit-transform: scale(1);
+}
+
+
+/*----------------------ANINAZIONI----------------------*/
+
+  /*GAMBE*/
+  .gambaImage{
+    animation-name: gamba;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes gamba {
+    0%   {transform:rotate(5deg)}
+    50%  {transform:rotate(0deg)}
+    100% {transform:rotate(5deg)}
+  }
+
+  .gambaImage2{
+    transform: rotate(30deg);
+    animation-name: gamba2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes gamba2 {
+    0%   {transform:rotate(30deg)}
+    25%  {transform:rotate(35deg)}
+    75%  {transform:rotate(30deg)}
+    110% {transform:rotate(35deg)}
+  }
+
+
+
+
+/*----------------------END ANINAZIONI----------------------*/

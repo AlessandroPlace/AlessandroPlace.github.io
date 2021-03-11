@@ -1,0 +1,760 @@
+.container{
+  position:relative;
+  background-image: url("../images/sfondo.jpg");
+  background-position: top left;
+  background-size: 1536px;
+  background-repeat: no-repeat;
+  max-width: 1536px;
+  margin-top:0;
+  padding: 0;
+  margin: auto;
+  height: 4040px;
+}
+
+body{
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url("../images/duplicazione.jpg");
+  background-position: center;
+  background-size: 1536px 4040px;
+  background-repeat: repeat-x;
+}
+
+
+
+/*----------------------ANCORE----------------------*/
+  .ancoraHome{
+    position:absolute;
+    top: 0;
+  }
+
+  .ancoraPG2{
+    position:absolute;
+    top:1010px;
+  }
+
+  .ancoraPG3{
+    position:absolute;
+    top: 2020px;
+  }
+
+  .ancoraPG4{
+    position:absolute;
+    top:3030px;
+  }
+
+/*----------------------END ANCORE----------------------*/
+
+/*----------------------LOGO----------------------*/
+  .logo{
+    grid-area: logoAltoDestra;
+    position: fixed;
+  }
+
+  .logoRollover2{
+    position: absolute;
+    width:250px;
+    height:87px;
+    top:-770px;
+    left:20px;
+
+  }
+
+  .logoRollover1{
+    position: absolute;
+  	width:250px;
+  	height:87px;
+    top:-770px;
+    left:20px;
+
+  }
+
+  .logo img{
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+  }
+
+
+  .logoRollover2:hover{
+    opacity: 0;
+  }
+
+
+  .logo img.top:hover {
+    opacity:0;
+  }
+/*----------------------END LOGO----------------------*/
+
+
+/*----------------------DESCRIPTION----------------------*/
+  .description{
+    position:absolute;
+    width: 540px;
+    height: 400px;
+    top:200px;
+	left:20px;
+  }
+
+  .descriptionImage{
+    width: 540px;
+    height: 400px;
+  }
+
+
+  .box {
+    position: absolute;
+    width: 410px;
+    height: 70px;
+    top: 335px;
+    left:-7px;
+
+    transition: 0.5s;
+    cursor: pointer;
+    border: 2px solid #4fc0a5;
+    -webkit-transition:0.5s;
+  }
+
+  .box:hover {
+    border: 2px solid rgba(0,160,80,0);
+    color: #FFF;
+  }
+
+  .box::before, .box::after {
+    width: 410px;
+    height: 72px;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    top:-3px;
+    left:-1px;
+    box-sizing: initial;
+    -webkit-transform: scale(0);
+    transition: 0.5s;
+  }
+
+  .foo::before {
+    border-bottom: 3px solid #e15444;
+    border-left: 3px solid #e15444;
+    -webkit-transform-origin: 0 100%;
+  }
+
+  .foo::after {
+    border-top: 3px solid #e15444;
+    border-right: 3px solid #e15444;
+    -webkit-transform-origin: 100% 0%;
+  }
+
+  .box:hover::after, .box:hover::before {
+    -webkit-transform: scale(1);
+  }
+
+
+
+/*----------------------END DESCRIPTION----------------------*/
+
+
+/*----------------------ASTRONAUTA----------------------*/
+  .astronauta{
+    position:absolute;
+    width: 300px;
+    left:580px;
+    top:120px;
+  }
+
+  .testaImage{
+    position:absolute;
+    width: 152px;
+    left:715px;
+    top:120px;
+  }
+
+  .gambaImage{
+    position: absolute;
+    width: 120px;
+    top:420px;
+    left:715px;
+  }
+
+  .gambaImage2{
+    position: absolute;
+    width: 120px;
+    top:410px;
+    left:660px;
+    transform: rotate(30deg);
+  }
+
+/*----------------------END ASTRONAUTA----------------------*/
+
+
+/*----------------------ASTRONAVE----------------------*/
+  .astronave{
+    position: relative;
+    height: 800px;
+    width: 335px;
+    top:0;
+    left:1120px;
+  }
+
+
+  .astronaveNera1{
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 119px;
+    height: 210px;
+    position: absolute;
+
+    top: 130px;
+    left: 82px;
+
+  }
+
+  .astronaveNera2{
+    position: absolute;
+
+    top: 340px;
+    left: 78px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 130px;
+    height: 90px;
+  }
+
+  .astronaveNera3{
+    position: absolute;
+
+    top: 429px;
+    left: -10px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 317px;
+    height: 320px;
+  }
+
+  .astronaveColore1{
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 120px;
+    height: 210.5px;
+    position: absolute;
+
+    top: 130px;
+    left: 82px;
+
+  }
+
+  .astronaveColore2{
+    position: absolute;
+
+    top: 340px;
+    left: 78px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 129.5px;
+    height: 90px;
+  }
+
+  .astronaveColore3{
+    position: absolute;
+
+    top: 429px;
+    left: -10px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 315.6px;
+    height: 319px;
+  }
+
+  .astronave img{
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+  }
+
+  .astronaveNera1:hover{
+    opacity: 0;
+  }
+
+  .astronaveNera2:hover{
+    opacity: 0;
+  }
+
+  .astronaveNera3:hover{
+    opacity: 0;
+  }
+/*----------------------END ASTRONAVE----------------------*/
+
+/*----------------------MONGOLFIERA----------------------*/
+  .mongolfiera{
+    position:absolute;
+    top:1800px;
+    width: 300px;
+  }
+
+  .mongolfieraImage{
+    width: 200px;
+  }
+
+/*----------------------END MONGOLFIERA----------------------*/
+
+/*----------------------NUVOLE----------------------*/
+
+  .ImageNuvole{
+    position:absolute;
+    top: 812px;
+    left:0px;
+  }
+
+/*----------------------END NUVOLE----------------------*/
+
+.regole{
+  position:absolute;
+  top:1350px;
+  left:710px;
+  width: 750px;
+}
+
+
+/*----------------------UCCELLI----------------------*/
+
+.uccelliNeri{
+  position:absolute;
+  width: 200px;
+  top: 1900px;
+  left: 80px;
+}
+
+.uccelliBlu{
+  position:absolute;
+  width: 130px;
+  top:1850px;
+  left:1350px;
+}
+
+/*----------------------END UCCELLI----------------------*/
+
+/*----------------------TS3VIEWER----------------------*/
+
+  .tsViewerContainer{
+    overflow-y: auto;
+    position:absolute;
+    left:20px;
+    top:1440px;
+    width: 500px;
+    height: 1000px;/*1200*/
+  }
+
+
+  .ts3index-viewer{
+    left:50px;
+    top:1300px;
+    width: 470px;
+    height: 1200px;
+  }
+
+  .viewerImage{
+    position: absolute;
+    width: 105px;
+    top:1350px;
+    left: 20px;
+  }
+  
+  .tsViewerContainer::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+  
+
+/*----------------------END TS3VIEWER----------------------*/
+
+.pale{
+  width: 200px;
+  height: 200px;
+  position:absolute;
+  left:1122px;
+  top:2590px;
+}
+
+.paleImage{
+  width: 200px;
+  height: 200px;
+}
+
+.imageBarca{
+  position: absolute;
+  width: 360px;
+  top:2895px;
+  left: 258px;
+}
+
+.imageOnda{
+  position: absolute;
+  width: 360px;
+  top:3082px;
+  left: 258px;
+}
+
+
+/*----------------------ANINAZIONI----------------------*/
+  /*ASTRONAVE*/
+
+  .astronaveNera1{
+  animation-name: astronaveNera1;
+  animation-duration:4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  }
+
+  @keyframes astronaveNera1 {
+  0%   {top: 130px; left: 82px;}
+  100% {transform:rotate(14.7deg);top: 66px; left: 125px;}
+  }
+
+
+  .astronaveNera2{
+  animation-name: astronaveNera2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  }
+
+  @keyframes astronaveNera2 {
+  0%   {top: 340px; left: 78px;}
+  100% {transform:rotate(-10deg);top: 305px; left: 60px;}
+  }
+
+
+  .astronaveNera3{
+  animation-name: astronaveNera3;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  }
+
+  @keyframes astronaveNera3 {
+  0%   {top: 429px; left: -10px;}
+  100% {transform:rotate(7deg);top: 449.5px; left: -18.9px;}
+  }
+
+  .astronaveColore1{
+  animation-name: astronaveColore1;
+  animation-duration:4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  }
+
+  @keyframes astronaveColore1 {
+  0%   {top: 130px; left: 82px;}
+  100% {transform:rotate(15deg);top: 66px; left: 126px;}
+  }
+
+
+  .astronaveColore2{
+  animation-name: astronaveColore2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  }
+
+  @keyframes astronaveColore2 {
+  0%   {top: 340px; left: 78px;}
+  100% {transform:rotate(-10deg);top: 305px; left: 60px;}
+  }
+
+
+  .astronaveColore3{
+  animation-name: astronaveColore3;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  }
+
+  @keyframes astronaveColore3 {
+  0%   {top: 429px; left: -10px;}
+  100% {transform:rotate(6.7deg);top: 449px; left: -19px;}
+  }
+
+  /*GAMBE*/
+  .gambaImage{
+    animation-name: gamba;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes gamba {
+    0%   {transform:rotate(5deg)}
+    50%  {transform:rotate(0deg)}
+    100% {transform:rotate(5deg)}
+  }
+
+  .gambaImage2{
+    transform: rotate(30deg);
+    animation-name: gamba2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes gamba2 {
+    0%   {transform:rotate(30deg)}
+    25%  {transform:rotate(35deg)}
+    75%  {transform:rotate(30deg)}
+    110% {transform:rotate(35deg)}
+  }
+
+  /*MONGOLFIERA*/
+  .mongolfiera{
+    position:absolute;
+    top:2300px;
+    animation-name: mongolfiera;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+
+
+  @keyframes mongolfiera {
+
+    0%      {top:2400px;left:200px}
+    12.5%   {top:2420px;left:334px}
+    25%     {top:2380px;left:468px}
+    37.5%   {top:2400px;left:602px}
+    50%     {top:2420px;left:736px}
+    62.5%   {top:2380px;left:602px}
+    75%     {top:2400px;left:468px}
+    87.5%   {top:2420px;left:334px}
+    100%    {top:2420px;left:200px}
+  }
+
+  /*PALE*/
+  .pale{
+    animation-name: pale;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  @keyframes pale {
+    0%   {transform:rotate(0deg)}
+    100% {transform:rotate(360deg)}
+  }
+
+  /*BARCA-ONDE*/
+  .imageBarca{
+    animation-name: barca;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  @keyframes barca {
+    0% {top:2885px;left:258px}
+    50%   {top:2895px;left:258px}
+    100% {top:2885px;left:258px}
+  }
+
+  .imageOnda{
+    animation-name: onde;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+
+  @keyframes onde {
+    0%     {top:3072px;left:258px}
+    50%   {top:3082px;left:258px}
+    100% {top:3072px;left:258px}
+  }
+
+  /*.imageBarca{
+    position: absolute;
+    width: 360px;
+    top:2895px;
+    left: 258px;
+  }
+
+  .imageOnda{
+    position: absolute;
+    width: 360px;
+    top:3082px;
+    left: 258px;
+  }*/
+
+
+
+/*----------------------END ANINAZIONI----------------------*/
+
+
+/*----------------------FEEDBACK FORM----------------------*/
+
+.content {
+  position:relative;
+  width: 700px;
+  height: 400px;
+  font-weight: 300;
+  font-family:"Roboto", "Segoe Ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  font-size: 29px;
+  color: #5b6d91;
+  position: absolute;
+  top: 3065px;
+  left: 470px;
+  right: 0;
+  bottom: 0;
+}
+
+.feedback-form__submit {
+  position: absolute;
+  top:295px;
+  left:246px;
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+  width: 60px;
+  cursor: pointer;
+}
+
+.feedback-form__nome{
+  position:absolute;
+  width: 140px;
+  top: 90px;
+  left: 260px;
+}
+
+.feedback-form__email{
+  position:absolute;
+  width: 140px;
+  top: 90px;
+  left: 450px;
+}
+
+.feedback-form__message{
+  position:absolute;
+  top: 150px;
+  left: 260px;
+  width: 330px;
+  height: 110px;
+}
+
+.scrittaForm{
+  position: absolute;
+  top:95px;
+  left:15px;
+  width: 225px;
+}
+
+
+
+textarea,
+input {
+
+  top: 190px;
+  left: 200px;
+  position:absolute;
+  margin-left: 20px;
+  border: none;
+
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 14px;
+
+  padding: 16px;
+  border-radius: 10px;
+  border: 0px;
+  resize: none;
+  box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.04);
+}
+
+input:hover,
+input:focus {
+  color: #000;
+}
+
+
+
+
+
+
+
+/*----------------------END FEEDBACK FORM----------------------*/
+
+@media screen and (max-width: 736px){
+
+  .container{
+    position:relative;
+    /*background-image: url("../images/sfondo.jpg");
+    background-position: top left;
+    background-size: 1536px;
+    background-repeat: no-repeat;*/
+    max-width: 1536px;
+    margin-top:0;
+    padding: 0;
+    margin: auto;
+    height: 4040px;
+  }
+
+  body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url("../images/sfondo.jpg");
+    background-position: center left;
+    background-size: 1536px 4040px;
+    background-repeat: repeat-x;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1500px) {
+
+  .container{
+    position:relative;
+    /*background-image: url("../images/sfondo.jpg");
+    background-position: top left;
+    background-size: 1536px;
+    background-repeat: no-repeat;*/
+	background-image: none;
+    max-width: 1536px;
+    margin-top:0;
+    padding: 0;
+    margin: auto;
+    height: 4040px;
+  }
+
+  body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url("../images/sfondo.jpg");
+    background-position: center left;
+    background-size: 1536px 4040px;
+    background-repeat: repeat-x;
+  }
+
+
+
+}
+
