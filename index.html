@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/images/logo hero.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style/style.css">
+    <title>Sergio Fontana Mediation</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg py-5 mt-3 mt-lg-0">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="static/images/logo navbar.png" alt="Bootstrap" width="100">
+          </a>
+          <a class="navbar-brand-center" href="#">
+            <img src="static/images/logo navbar.png" alt="Bootstrap" width="100">
+          </a>
+          <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">CHI SONO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">SERVIZI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTATTI</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="fullscreen-menu" id="fullscreenMenu">
+        <ul>
+          <li><a href="#services" onclick="toggleFullscreenMenu()">Servizi</a></li>
+          <li><a href="#about" onclick="toggleFullscreenMenu()">Chi Sono</a></li>
+          <li><a href="#certifications" onclick="toggleFullscreenMenu()">Certificazioni</a></li>
+          <li><a href="#contact" onclick="toggleFullscreenMenu()">Contatti</a></li>
+        </ul>
+      </div>
+
+      <div class="container">
+
+        <section class="mb-5">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <img src="static/images/logo hero.png" alt="" style="max-width: 100%;">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col quote">
+                    <h3 class="text-center fw-normal">“Siamo tutti buoni o cattivi... Dipende da chi racconta la storia”</h3>
+                    <h3 class="text-center fw-normal">(Autore sconosciuto)</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-3">
+            <hr class="mb-3">
+            <p class="text-center py-5">Il conflitto non dovrebbe essere considerato come un problema, ma piuttosto come una caratteristica naturale delle relazioni umane e, quindi, dovrebbe essere visto come un'opportunità per migliorare la conoscenza degli altri e un momento di crescita personale e professionale.</p>
+            <hr class="my-3">
+        </section>
+
+
+        <section class="mb-5" id="services">
+            <div class="row">
+                <h7 class="text-center color-blue mt-5 mb-2">CAMPO DI ESPERIENZA</h7>
+                <h2 class="text-center color-blue mb-4">Servizi</h2>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4 p-5 service-col">
+                    <img src="static/images/card 1.png" alt="" class="mb-2">
+                    <h2 class="my-5 color-blue">Coaching in Mediazione</h2>
+                    <p class="mt-2">Offro ai miei clienti la mia esperienza di quattordici anni con oltre 2000 mediazioni (per lo più di successo). La consulenza è rivolta a parti, avvocati e mediatori che si trovano coinvolti in tavoli di mediazione complessi o stanno considerando di avviare una procedura.</p>
+                </div>
+                <div class="col-12 col-lg-4 p-5 service-col">
+                    <img src="static/images/card 2.png" alt="" class="mb-2">
+                    <h2 class="my-5 color-blue">Secondo la Legge Italiana <span class="fw-normal fs-4">(D.M. 28-2010 & 150-2023)</span></h2>
+                    <p class="mt-2">Offro la mia professionalità come Mediatore per mediazioni civili e commerciali sia obbligatorie che volontarie su tutto il territorio italiano in base alle disposizioni del Decreto Ministeriale 28-2010 e come recentemente modificato dal Decreto Ministeriale 150-2023.</p>
+                </div>
+                <div class="col-12 col-lg-4 p-5 service-col">
+                    <img src="static/images/card 3.png" alt="" class="mb-2">
+                    <h2 class="my-5 color-blue">Mediazione Transfrontaliera</h2>
+                    <p class="mt-2">Come Mediatore Internazionale certificato (CEDR, IMI), posso agire come Mediatore Professionale in controversie che coinvolgono individui e/o aziende di diverse nazionalità.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex justify-content-center my-4">
+                    <a href="mailto:test@test.it" type="button" class="btn btn-primary btn-lg fw-bold">ORGANIZZIAMO UNA CHIAMATA</a>    
+                </div>
+            </div>
+        </section>
+
+        <hr class="d-block d-lg-none">
+
+        <section class="mb-5 about-me-col" id="about">
+            <div class="row p-sm-5 p-0">
+                <div class="col-lg-3 p-3">
+                    <h3 class="color-blue px-4">Chi Sono</h3>
+                    <p class="px-4">Sono un mediatore professionista, a tempo pieno. Credo fermamente nella mediazione come valida alternativa al contenzioso. È necessario imparare a vedere il conflitto come un'opportunità di crescita e non solo come un problema.</p>
+                </div>
+                <div class="col-lg-3 p-3 text-center">
+                    <img src="static/images/about me 1.png" alt="" class="mb-2 px-4" style="width: 100%;">
+                    <p class="font-13 my-2 color-blue text-lg-start px-4">GARY FRIEDMAN E IO</p>
+                </div>
+                <div class="col-lg-3 p-3 text-center">
+                    <img src="static/images/about me 2.png" alt="" class="mb-2 px-4" style="width: 100%;">
+                    <p class="font-13 my-2 color-blue text-lg-start px-4">HON. DANIEL WEINSTEIN (FONDATORE DI JAMS) E IO</p>
+                </div>
+                <div class="col-lg-3 p-3 text-center">
+                    <img src="static/images/about me 3.png" alt="" class="mb-2 px-4" style="width: 100%;">
+                    <p class="font-13 my-2 color-blue text-lg-start px-4">LA MIA MEDIAZIONE ONLINE</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="d-block d-lg-none">
+
+        <section class="mb-5" id="certifications">
+            <div class="row">
+                <h2 class="text-center color-blue my-5">Certificazioni</h2>
+            </div>
+           <div class="row text-center my-5 ">
+            <div class="col-12 col-md-6 d-flex justify-content-center my-5">
+                <img src="static/images/cedr.png" alt="" class="m-auto px-5" style="width: 70%;height:auto">
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center my-5">
+                <img src="static/images/imi.png" alt="" class="m-auto px-5" style="width: 70%;height:auto">
+            </div>
+        </section>
+
+        <section class="mb-5 mx-3" id="contact">
+            <div class="row p-5" style="background-color: #E3EAF2;">
+                <div class="col-12 col-sm-3 p-3">
+                    <h3 class="color-blue">Contatti</h3>
+                    <p>Oppure controlla il mio profilo LinkedIn qui sotto</p>
+                    <a href="">
+                        <img src="static/images/linkedin.png" alt="">
+                    </a>
+                </div>
+                <form id="contactForm" action="send.php" method="post" class="col-12 col-sm-9 p-3">
+                    <div class="row p-3">
+                        <input class="p-3 form-control" placeholder="EMAIL" name="email" type="text" id="email" required>
+                        <span class="error" id="emailError">Inserisci un indirizzo email valido.</span>
+                    </div>
+                    <div class="row p-3">
+                        <textarea class="p-3 form-control" placeholder="TESTO" name="text" id="text" cols="30" rows="10" required></textarea>
+                        <span class="error" id="textError">Inserisci un messaggio.</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">Acconsento al trattamento dei miei dati personali secondo la <a href="privacy-policy.html">Privacy Policy</a>.</label>
+                        <span class="error" id="consentError">Devi acconsentire alla privacy policy.</span>
+                    </div>
+                    <div class="row p-3">
+                        <button type="submit" class="btn btn-primary fw-bold ml-auto">INVIA</button>    
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <button type="button" class="btn-floating " id="btn-back-to-top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/>
+              </svg>
+        </button>
+        
+        <footer class="mb-5">
+            <div class="row">
+                <small>© 2024 Sergio Fontana Mediation. All rights reserved.</small>
+            </div>
+            <div class="row">
+                <a href="privacy-policy.html"><small>Privacy Policy</small></a>
+            </div>
+            <div class="row">
+                <div class="language-switcher">
+                    <a id="languageSwitcher" href="#">
+                        <img id="languageFlag" src="" alt="Language Flag" width="30">
+                        <small id="languageText"></small>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        
+
+
+
+
+      </div><!--container-->
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var currentUrl = window.location.href;
+            var languageSwitcher = document.getElementById('languageSwitcher');
+            var languageFlag = document.getElementById('languageFlag');
+            var languageText = document.getElementById('languageText');
+    
+            var pathname = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
+    
+            if (pathname.includes('/en/')) {
+                console.log("eng");
+                // Siamo nella versione inglese
+                var newPathname = pathname.replace('/en/', '/');
+                languageSwitcher.href = newPathname + search + hash;
+                languageFlag.src = 'static/images/italian-flag.png';
+                languageFlag.alt = 'Italian';
+                languageText.textContent = 'Versione italiana del sito web';
+            } else {
+                console.log("ita");
+                // Siamo nella versione italiana o default
+                var newPathname = pathname.endsWith('/') ? pathname + 'en/' : pathname + '/en/';
+                languageSwitcher.href = newPathname + search + hash;
+                languageFlag.src = 'static/images/english-flag.png';
+                languageFlag.alt = 'English';
+                languageText.textContent = 'View english version of the website';
+            }
+        });
+    </script>
+    
+
+      <script>
+        function toggleFullscreenMenu() {
+          var menu = document.getElementById('fullscreenMenu');
+          var togglerIcon = document.querySelector('.navbar-toggler-icon');
+          var body = document.body;
+          
+          if (menu) {
+            menu.classList.toggle('show');
+            body.classList.toggle('no-scroll');
+            if (menu.classList.contains('show')) {
+              togglerIcon.classList.remove('closed');
+              togglerIcon.classList.add('open');
+            } else {
+              togglerIcon.classList.remove('open');
+              togglerIcon.classList.add('closed');
+            }
+          }
+        }
+      
+        document.addEventListener('DOMContentLoaded', function() {
+          var togglerIcon = document.querySelector('.navbar-toggler-icon');
+          togglerIcon.classList.add('closed'); // Imposta l'icona iniziale
+      
+          document.querySelector('.navbar-toggler').addEventListener('click', toggleFullscreenMenu);
+        });
+      </script>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Previene il comportamento predefinito di invio del modulo
+        
+        var email = document.getElementById("email").value;
+        var text = document.getElementById("text").value;
+        var consent = document.getElementById("consent").checked;
+    
+        var emailError = document.getElementById("emailError");
+        var textError = document.getElementById("textError");
+        var consentError = document.getElementById("consentError");
+    
+        emailError.style.display = "none";
+        textError.style.display = "none";
+        consentError.style.display = "none";
+    
+        var valid = true;
+    
+        if (!email) {
+            emailError.style.display = "block";
+            valid = false;
+        }
+        if (!text) {
+            textError.style.display = "block";
+            valid = false;
+        }
+        if (!consent) {
+            consentError.style.display = "block";
+            valid = false;
+        }
+    
+        if (valid) {
+            var formData = new FormData(this);
+    
+            fetch("send.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data); // Mostra il messaggio di successo o errore
+            })
+            .catch(error => {
+                console.error("Errore:", error);
+            });
+        }
+    });
+    </script>
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+        scrollFunction();
+        };
+
+        function scrollFunction() {
+        if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+        ) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+</body>
+</html>
